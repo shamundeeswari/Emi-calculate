@@ -1,0 +1,106 @@
+
+	<section class="emi-calculate">
+		<div class="wrap-container">	
+			<div class="loan-form">		
+				<div class="loan-amount">
+					<div class="loan-detail">
+						<div class="amount-detail">
+							<p> Loan Amount</p>
+							 <input type="number" class="form-control" 
+							        id="lamount"  name="number"	
+							        (blur)="tbupdate(0)"							
+							        [(ngModel)]="query.amount"								
+								    min="50000" 
+								    max="1000000"
+								    maxlength="7"
+								    onKeyPress="if(this.value.length==7) return false;">	
+						</div>
+						<div class="amount-progress">
+							<mat-slider 
+								thumbLabel [displayWith]="formatLabel"	
+								[(value)]="pemi.value"										
+								min = "50000"	
+								max="1000000"
+								(change)="update()"
+								>										
+							</mat-slider>				  
+						</div>
+					</div>
+					<div class="loan-detail">
+						<div class="amount-detail">
+							<p> Interest Rate </p>
+							 <input type="number" class="form-control" 
+							        id="l-interst"   name="number" 
+							        (blur)="tbupdate(1)"
+							        [(ngModel)]="query.interest" 
+							        min="1" max="12"
+							        maxlength="2"
+								    onKeyPress="if(this.value.length==2) return false;"
+							        >
+						</div>
+						<div class="amount-progress">
+
+							<mat-slider 
+								thumbLabel [displayWith]="interestLabel"	
+								[(value)] ="remi.value"
+								min = "1"	
+								max="12"
+								(change)="update()"
+								></mat-slider>				  
+						</div>
+					</div> 
+
+					 <div class="loan-detail">
+						<div class="amount-detail">
+							<p> Tenure Period(in months) </p>
+							 <input type="text" class="form-control" 
+							        id="l-tenure"   name="number" 
+							        (blur)="tbupdate(2)"
+							        [(ngModel)]="query.tenureMo" 
+							        min="1" max="12"
+							        maxlength="2"
+								    onKeyPress="if(this.value.length==2) return false;">
+						</div>
+						<div class="amount-progress">
+							<mat-slider 
+								thumbLabel [displayWith]="emiinterestLabel"	
+								[(value)] ="memi.value"
+								min = "1"	
+								max="12"
+								(change)="update()">
+							</mat-slider>				  
+						</div>
+					</div> 
+				</div>
+				<div class="total-amount">
+					<div class="test-interst">
+						<div class="tot-int">
+							<p> Total Interest </p>
+							<p> Amount per month </p>
+						</div>
+						<div class="tot-amount">
+							  &#8377; {{result.emi || "--"}}
+						</div>
+					</div>
+					<div class="test-interst">
+						<div class="tot-int">
+							<p> Total Interest </p>
+							<p> Amount per interest </p>
+						</div>
+						<div class="tot-amount">
+							 &#8377; {{result.interest || "--"}}
+						</div>
+					</div>
+					<div class="test-interst">
+						<div class="tot-int">
+							<p> Total Interest </p>
+							<p> Amount per total </p>
+						</div>
+						<div class="tot-amount">
+							  &#8377; {{result.total || "--"}}
+						</div>
+					</div>
+				</div>					
+			</div>	
+		</div>	
+	</section>

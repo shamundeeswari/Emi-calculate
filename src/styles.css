@@ -1,0 +1,366 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+
+    .wrap-container {
+        max-width: 1280px;
+        margin: auto;
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+
+    .loan-form{
+        width: 50%;
+        margin: 40px auto;
+    }
+
+    .loan-cal .row{
+    	flex-direction: row-reverse;
+    }
+
+
+     .amount-detail{
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 0px;
+    }
+
+     .amount-detail p{
+
+    	color:#9999ba;
+    	font-size: 16px;
+    	margin-bottom: 0px;
+    }
+
+     .amount-detail input{ 
+    	width: 100px;
+    }
+
+    .partner-section.car-sec{
+    	background: #fff;	
+    }
+
+    /* Mat slider css start */
+
+     .mat-slider {
+        width: 100%;
+    }
+
+    .mat-slider-thumb {
+        background-color: #1e3b45!important;
+    }
+
+
+   .mat-accent .mat-slider-track-fill{
+        background-color: #8cc63f;
+    }
+
+    .mat-slider-thumb {
+        background-color: #1e3b45!important;
+    }
+
+
+    .mat-slider-horizontal .mat-slider-wrapper,
+    .mat-slider-horizontal .mat-slider-track-wrapper,
+    .mat-slider-horizontal .mat-slider-track-fill,
+    .mat-slider-horizontal .mat-slider-track-background,
+    .mat-slider-horizontal .mat-slider-ticks
+    {
+        height: 5px!important;
+        border-radius: 5px;
+    }
+
+
+       .mat-slider-thumb-label {
+        transform: rotate(360deg) !important;
+        border-radius: 0px !important;
+      }
+      
+      
+    .mat-slider-thumb-label-text {
+        opacity: 1 !important;
+        color: #1d3b45!important;
+        font-size: 14px!important;
+        font-weight: 600!important;
+        font-family: "HelveticaNeue", sans-serif !important;
+      }
+
+     
+
+     .mat-slider-horizontal .mat-slider-thumb-label{
+        right: -20px;
+      }
+
+      .mat-accent .mat-slider-thumb-label{
+        background-color: transparent;
+        width: auto;
+     }
+
+    .mat-slider-horizontal .mat-slider-thumb-label-text{
+        transform: rotate(0deg)!important;
+      }
+
+     .amount-progress .mat-slider:not(.mat-slider-disabled).cdk-focused.mat-slider-thumb-label-showing .mat-slider-thumb{
+        transform: scale(.7)!important;
+      }
+
+       .mat-slider-min-value.mat-slider-thumb-label-showing .mat-slider-thumb-label {
+        background-color: transparent!important;
+    }
+
+
+
+
+    /* Mat slider css end*/
+
+
+    .loan-amount{
+    	background: #f8f9fe;
+        padding: 30px;
+        border: 1px solid #1e3b45;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+    }
+
+    .loan-amount .amount-detail .form-control{
+    	background: #fff;
+    }
+
+    .table-sec{
+    	padding-bottom: 30px;
+        background:#fff;
+    }
+
+    .table-sec .table thead th{
+    	padding: 20px;
+        background: #1d3b45;
+        color: #fff;
+    }
+    .table-sec .table td{
+    	padding: 15px 25px;
+    }
+
+
+    .table-sec .table thead tr{
+    	background: #1d3b45;
+        border: 1px solid #1d3b45;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+    }
+
+    .table-sec .table tr{
+    	display: flex;    
+        justify-content: space-between;
+    }
+
+    .table-sec .table thead th{
+    	padding: 20px 25px;    
+        color: #fff;
+        border-bottom: transparent;
+        border-top: transparent;
+    }
+
+    .table-sec .table td:last-child,
+    .table-sec .table th:last-child{
+    	width: 60%;
+    }
+
+    .table-sec .table td,.table-sec .table th{
+    	width: 100%;
+    	font-size: 15px;
+    	color: #5c5c5c;
+    }
+
+    .table-sec .table thead th{
+        font-weight: 600;
+    }
+
+    .table-sec tbody tr:last-child {
+        border-bottom: 1px solid #b1b9c3;
+    }
+
+
+
+    .table-striped tbody tr:last-child {
+        border-bottom: 1px solid #b1b9c3;
+    }
+
+    .table-sec .table td {
+        border-top: 1px solid #1d3b45;
+    }
+
+    .table-sec .table td:first-child {
+        border-left: 1px solid #b1b9c3;
+    }
+
+    .table-sec .table td:last-child {
+        border-right: 1px solid #b1b9c3;
+    }
+
+    .business-page.car-loan-page{
+    	background: #fff;
+    }
+
+    .business-page.car-loan-page .header,
+    .business-page.car-loan-page .business-plan{
+    	background: #f8f9fe;
+    }
+
+    .test-interst{
+        display: flex;
+	    justify-content: space-between;
+	    align-items: center;
+	    color: #fff;
+	    border-bottom: 1px dashed #ddd;
+	    padding: 20px;
+    }
+
+    .test-interst:last-child {
+    	border-bottom: transparent;
+	}
+
+    .test-interst .tot-int p {
+        color: #fff;
+        margin-bottom: 5px;
+        font-size: 20px;
+        padding: 10px 0pc;
+    	margin: 0px;
+    }
+
+    .test-interst .tot-amount{
+    	font-size: 35px;
+        line-height: 60px;
+    }
+
+    .table-sec .table-hold{
+        width: 100%;
+    }
+
+    .table-sec .table tbody th {
+        border-top: 1px solid #1d3b45;
+        padding: 15px 25px;
+        border-left: 1px solid #b1b9c3;
+    }
+
+    .form-control{
+        height: 42px!important; 
+        border: 1px solid #dfe0e2;
+        background: transparent;
+        font-size: 14px;
+        color: #9b9b9b;
+      }
+    .mat-form-field{
+        line-height: 24px!important;
+        height: 42px!important;
+        background: transparent!important;
+      }
+
+    .total-amount{
+      	border-bottom-left-radius: 3px;
+    	border-bottom-right-radius: 3px;
+    	padding: 10px 30px;
+    	background: #1d3b45;
+      }
+
+
+
+
+
+@media only screen and (max-device-width: 991px){
+
+}
+
+@media only screen and (max-device-width: 479px) {
+
+
+
+
+    .table-sec .table-hold{
+        max-width: 500px;
+        max-height: 500px;
+        overflow-y: scroll;
+        position: relative;
+        width: 500px;
+        margin: 10px;       
+    }
+
+    .table-sec .table td, .table-sec .table th{
+        font-size: 10px;
+    }
+
+    .table-sec .table thead th{
+        padding: 10px 15px;
+        color: #fff;
+        border-bottom: transparent;
+        border-top: transparent;
+        position: sticky;
+        top: 0;    
+        background: #1d3b45;          
+        font-weight: 600;
+
+    }
+
+    .table-sec .table thead{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .table-sec .table thead th{
+        width: 90px;
+    }
+
+    .table-sec .table tbody th{
+        border-top: 1px solid #1d3b45;
+        padding: 15px 25px;
+        border-left: 1px solid #1d3b45;
+        position: sticky;
+        left: 0;
+        background: #1d3b45;
+        border-right: 1px solid #1d3b45;
+        font-weight: 600;
+        color: #fff;        
+    }
+    .table-striped tbody tr{
+        border-bottom: 1px solid #1d3b45;    
+    }
+
+    .table-striped tbody tr:last-child {
+        border-bottom: 1px solid #1d3b45;
+    }
+
+    .table-sec .table tr{
+        display: inherit;
+    }
+
+    .table-sec .table td:last-child, .table-sec .table th:last-child{
+        width: 90px;
+    }
+
+
+     .table-sec .table thead th:first-child {
+        z-index: 1;
+        left: 0px;        
+        padding-right: 0px;
+        width: 64px;
+    }
+
+    .test-interst .tot-int p{
+        font-size: 20px;
+    }
+    .test-interst .tot-amount{
+        font-size: 30px;
+        line-height: 60px;
+        margin-left: 20px;
+    }
+  
+
+}
+
